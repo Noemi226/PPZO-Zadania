@@ -10,7 +10,7 @@ class Program
         Console.Write("Podaj drugą liczbę: ");
         double l2 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("Operatory arytmetyczne \n Dodawanie + \n Odejmowanie - \n Mnożenie * \n Dzielenie / \n Wybierz operację: ");
+        Console.Write("Operatory arytmetyczne \n Dodawanie + \n Odejmowanie - \n Mnożenie * \n Dzielenie / \n Potęgowanie ^ \n Wybierz operację: ");
         string opcja = Console.ReadLine();
 
         if (opcja == "+")
@@ -35,6 +35,11 @@ class Program
             {
                 Console.WriteLine($"Wynik: {l1 / l2}");
             }
+        }
+        else if (opcja == "^")
+        {
+           double wynik = Math.Pow(l1, l2);
+            Console.WriteLine($"Wynik: {wynik}");
         }
         else
         {
