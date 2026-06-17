@@ -30,7 +30,7 @@ namespace HotelReservationSystem
             IsAvailable = true;
         }
 
-        // Polimorfizm:
+        // POLIMORFIZM:
         public abstract decimal CalculatePrice(int days);
 
         public virtual string GetDescription()
